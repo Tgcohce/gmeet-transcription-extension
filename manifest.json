@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Subtitle Recorder",
+  "version": "1.0",
+  "description": "Records Google Meet subtitles and generates a transcript.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "transcriptExtensionIcon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

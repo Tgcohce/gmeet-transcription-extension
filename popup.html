@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Meet Transcript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #212529;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 200px;
+      width: 300px;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #007bff;
+    }
+    #transcriptContainer {
+      overflow-y: auto;
+      background: #ffffff;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      padding: 10px;
+      width: 90%;
+      height: 150px;
+      font-size: 14px;
+      color: #495057;
+    }
+    #controls {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google Meet Transcript</h1>
+  <div id="transcriptContainer">
+    <p>No transcript yet. Start recording!</p>
+  </div>
+<div id="controls">
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  <button id="download" style="display: none;">Download</button>
+</div>
+  <script src="popup.js"></script>
+</body>
+</html>
